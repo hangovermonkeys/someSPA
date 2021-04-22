@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:dev": "env NODE_ENV=development webpack --config webpack.config.js",
-    "build:prod": "env NODE_ENV=production webpack --config webpack.config.js",
-    "dev": "env NODE_ENV=development node ./bin/dev.js",
+    "build:dev": "set NODE_ENV=development&& webpack --config webpack.config.js",
+    "build:prod": "set NODE_ENV=production&& webpack --config webpack.config.js",
+    "dev": "set NODE_ENV=development&& node ./bin/dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sample Text",
   "license": "ISC",
   "dependencies": {
+    "env": "0.0.2",
     "express": "^4.17.1",
     "nodemon": "^2.0.7",
     "react": "^17.0.1",
